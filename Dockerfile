@@ -5,18 +5,14 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application files
 COPY main.py .
 COPY init_db.py .
 
-# Run the application
 CMD ["python", "main.py"]
 
-# Build Command:
 # -----------------------------
 # docker build -t rahulagowda04/personal_medical_assistant .
 #
