@@ -32,4 +32,4 @@ CMD ["streamlit", "run", "app.py"]
 # docker run -p 8501:8501 rahulagowda04/smarthealth-assistant
 #
 # Or with environment variables (if not using .env file):
-# docker run -p 8501:8501 -e NEO4J_URI="neo4j+s://065f4ada.databases.neo4j.io" -e NEO4J_USERNAME="neo4j" -e NEO4J_PASSWORD="aYYluK7n_mVFoF7l0DUW1LXKZpUAqG5cy_GfS9t32Ro" -e GOOGLE_API_KEY="AIzaSyB8-veRiwdkBR-EYUPRziD1n8TvqAnDpLc" rahulagowda04/smarthealth-assistant
+# docker run -p 8501:8501 -e NEO4J_URI="your_neo4j_uri" -e NEO4J_USERNAME="your_username" -e NEO4J_PASSWORD="your_password" -e GOOGLE_API_KEY="your_api_key" rahulagowda04/smarthealth-assistant
