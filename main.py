@@ -1,5 +1,5 @@
 from langchain_neo4j import Neo4jGraph
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI  
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from langchain_core.messages import SystemMessage, HumanMessage
 from langgraph.checkpoint.memory import MemorySaver
