@@ -2,11 +2,15 @@
 
 A Streamlit medical chatbot powered by Google Gemini and Neo4j that remembers your medical history, tracks symptoms and vitals over time, and provides personalized health advice based on your past data. 🏥💡
 
+## 🌐 Live Application
+
+**Try it now**: [https://smarthealthassistant.streamlit.app/](https://smarthealthassistant.streamlit.app/) 🚀
+
 ## 📸 Application Screenshots
 
 ### Main Chat Interface
 
-![SmartHealth Assistant Interface](screenshots/chat-interface.png)
+![SmartHealth Assistant Interface](chat-interface.png)
 
 The main interface features:
 
@@ -17,7 +21,7 @@ The main interface features:
 
 ### Sample Conversation Flow
 
-![Medical Conversation Example](screenshots/medical-conversation.png)
+![Medical Conversation Example](medical-conversation.png)
 
 The assistant can:
 
@@ -28,7 +32,7 @@ The assistant can:
 
 ### Neo4j Database Visualization
 
-![Database Graph Structure](screenshots/graph_database.png)
+![Database Graph Structure](graph_database.png)
 
 The graph database structure shows:
 
@@ -38,7 +42,7 @@ The graph database structure shows:
 
 ### Database Schema Overview
 
-![Database Information Panel](screenshots/database-schema.png)
+![Database Information Panel](database-schema.png)
 
 Key database components:
 
@@ -108,7 +112,13 @@ NEO4J_PASSWORD=your_password
 GOOGLE_API_KEY=your_google_api_key
 ```
 
-## 🏗️ Setup Locally
+## 🏗️ Setup Options
+
+### 🌐 Use the Live Application (Recommended)
+
+Simply visit [https://smarthealthassistant.streamlit.app/](https://smarthealthassistant.streamlit.app/) to start using the SmartHealth Assistant immediately. No installation required!
+
+### 🏠 Setup Locally
 
 1. Clone the repository:
 
