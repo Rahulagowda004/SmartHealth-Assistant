@@ -41,6 +41,11 @@ with st.sidebar:
     st.subheader("User Information")
     username = st.text_input("Your Username", key="username").lower()
     
+    # API Key input
+    st.markdown("---")
+    st.subheader("🔑 API Configuration")
+    google_api_key = st.text_input("Google API Key", type="password", key="google_api_key", help="Enter your Google Gemini API key")
+    
     # Application description in sidebar
     st.markdown("---")
     st.subheader("🏥 About SmartHealth Assistant")
@@ -84,15 +89,14 @@ for msg in st.session_state.messages:
 
 # Main chat input and processing logic
 if prompt := st.chat_input():
-    # Get credentials from environment variables
-    google_api_key = os.getenv("GOOGLE_API_KEY")
+    # Get Neo4j credentials from environment variables (keep these secure)
     neo4j_uri = os.getenv("NEO4J_URI")
     neo4j_username = os.getenv("NEO4J_USERNAME")
     neo4j_password = os.getenv("NEO4J_PASSWORD")
     
     # Validate required credentials
     if not google_api_key:
-        st.error("Google API Key not found in .env file")
+        st.error("Please enter your Google API Key in the sidebar")
         st.stop()
     
     if not all([neo4j_uri, neo4j_username, neo4j_password]):
@@ -114,7 +118,7 @@ if prompt := st.chat_input():
             st.session_state["app_instance"] = MedicalApp(neo4j_connector=connector, llm_model=llm, username=username)
             st.session_state["workflow_app"] = st.session_state["app_instance"].setup_workflow(username)
         except Exception as e:
-            st.error(f"Failed to connect to database: {str(e)}")
+            st.error(f"Failed to connect to database or initialize AI model: {str(e)}")
             st.stop()
 
     # Process user input and generate response
