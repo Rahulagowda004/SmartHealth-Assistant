@@ -10,7 +10,7 @@ A Streamlit medical chatbot powered by Google Gemini and Neo4j that remembers yo
 
 ### Main Chat Interface
 
-![SmartHealth Assistant Interface](chat-interface.png)
+![SmartHealth Assistant Interface](Pictures/chat-interface.png)
 
 The main interface features:
 
@@ -21,7 +21,7 @@ The main interface features:
 
 ### Sample Conversation Flow
 
-![Medical Conversation Example](medical-conversation.png)
+![Medical Conversation Example](Pictures/medical-conversation.png)
 
 The assistant can:
 
@@ -32,7 +32,7 @@ The assistant can:
 
 ### Neo4j Database Visualization
 
-![Database Graph Structure](graph_database.png)
+![Database Graph Structure](Pictures/graph_database.png)
 
 The graph database structure shows:
 
@@ -42,7 +42,7 @@ The graph database structure shows:
 
 ### Database Schema Overview
 
-![Database Information Panel](database-schema.png)
+![Database Information Panel](Pictures/database-schema.png)
 
 Key database components:
 
