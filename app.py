@@ -12,13 +12,6 @@ load_dotenv()
 with st.sidebar:
     st.subheader("User Information")
     username = st.text_input("Your Username", key="username").lower()
-    
-    st.subheader("Configuration")
-    st.info("✅ Google API Key loaded from .env")
-    st.info("✅ Neo4j credentials loaded from .env")
-    
-    "[Get a Google API key](https://aistudio.google.com/app/apikey)"
-    "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
 
 st.title("🏥 SmartHealth Assistant")
 st.caption("🚀 A Streamlit medical chatbot powered by Google Gemini and Neo4j")
