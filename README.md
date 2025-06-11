@@ -28,7 +28,7 @@ The assistant can:
 
 ### Neo4j Database Visualization
 
-![Database Graph Structure](screenshots/neo4j-database.png)
+![Database Graph Structure](screenshots/graph_database.png)
 
 The graph database structure shows:
 
