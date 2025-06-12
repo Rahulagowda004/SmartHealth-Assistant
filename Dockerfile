@@ -24,12 +24,12 @@ CMD ["streamlit", "run", "app.py"]
 # -----------------------------
 # Build Command:
 # -----------------------------
-# docker build -t rahulagowda04/smarthealth-assistant .
+# docker build -t rahula004/smarthealth-assistant .
 #
 # Run Command:
 # -----------------------------
 # For Windows PowerShell:
-# docker run -p 8501:8501 rahulagowda04/smarthealth-assistant
+# docker run -p 8501:8501 rahula004/smarthealth-assistant
 #
 # Or with environment variables (if not using .env file):
-# docker run -p 8501:8501 -e NEO4J_URI="<enter here>" -e NEO4J_USERNAME="<enter here>" -e NEO4J_PASSWORD="<enter here>" rahulagowda04/smarthealth-assistant
+# docker run -p 8501:8501 -e NEO4J_URI="<enter here>" -e NEO4J_USERNAME="<enter here>" -e NEO4J_PASSWORD="<enter here>" rahula004/smarthealth-assistant
