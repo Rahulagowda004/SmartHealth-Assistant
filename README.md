@@ -4,7 +4,19 @@ A Streamlit medical chatbot powered by Google Gemini and Neo4j that remembers yo
 
 ## 🌐 Live Application
 
-**Try it now**: [https://smarthealthassistant.streamlit.app/](https://smarthealthassistant.streamlit.app/) 🚀
+🌐 **Live Demo:** [https://smarthealthassistant.streamlit.app/](https://smarthealthassistant.streamlit.app/) 🚀
+
+🌐 **Docker Image:**
+1. **Pull Image:**
+   ```bash
+   # To pull directly from docker
+   docker pull rahula004/smarthealth-assistant
+   ```
+2. **Run Image:**
+   ```bash
+   # To pull directly from docker
+   docker run -p 8501:8501 -e NEO4J_URI="<enter here>" -e NEO4J_USERNAME="<enter here>" -e NEO4J_PASSWORD="<enter here>" rahula004/smarthealth-assistant
+   ```
 
 ## 📸 Application Screenshots
 
